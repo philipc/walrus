@@ -84,8 +84,7 @@ impl Emit for ModuleDebugData {
         };
 
         let mut convert_context = ConvertContext::new(
-            &from_dwarf.debug_str,
-            &from_dwarf.debug_line_str,
+            &from_dwarf,
             &mut dwarf.strings,
             &mut dwarf.line_strings,
             &convert_address,
